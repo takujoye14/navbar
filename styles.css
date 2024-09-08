@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1061d2;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar-left .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.icon {
+    font-size: 18px;
+    display: inline;
+    margin-right: 20px;
+
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info span {
+    margin-right: 10px;
+}
+
+/* the style for the icon of the navbar*/
+.avatar {
+    width: 30px;
+    height: 30px;
+    background-color: #ea791c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/*the style of the button*/
+.dropbtn {
+    background-color: #1061d2;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/*the style for the contents of the dropdown icons*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* for the content so the style of the words and flags*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* the contents will dropdown when the mouse hovers over it */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* the color of the button when the mouse hovers over it */
+.dropdown:hover .dropbtn {
+    background-color: #f9f9f9;
+}
